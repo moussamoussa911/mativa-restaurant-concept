@@ -535,7 +535,7 @@
     const featured = [
       { image: "/assets/steak.jpg", item: menuItems.find(item => item.id === "filet200"), label: "01 · ANGUS" },
       { image: "/assets/surf-and-turf.jpg", item: menuItems.find(item => item.id === "garnelen"), label: "02 · SURF & TURF" },
-      { image: "/assets/spareribs.jpg", item: menuItems.find(item => item.id === "spareribs"), label: "03 · FIRE" }
+      { image: "/assets/spareribs-complete.jpg", item: menuItems.find(item => item.id === "spareribs"), label: "03 · FIRE" }
     ];
     return `
       <main id="content">
@@ -747,7 +747,7 @@
           </div>
         </section>
         <section class="promise-section">
-          <div class="promise-image"><img src="/assets/spareribs.jpg" alt="Spare Ribs bei Mativa" loading="lazy"></div>
+          <div class="promise-image"><img src="/assets/spareribs-complete.jpg" alt="Spare Ribs bei Mativa" loading="lazy"></div>
           <div class="promise-copy">
             <span class="eyebrow light">${c("story", "promiseKicker")}</span>
             <h2>${c("story", "promiseTitle")}</h2>

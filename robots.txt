@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mativa-restaurant-concept.onrender.com/sitemap.xml

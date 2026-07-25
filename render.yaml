@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mativa-restaurant-concept
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true

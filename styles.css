@@ -3355,6 +3355,19 @@ figure {
     grid-template-columns: 1fr;
   }
 
+  .featured-section .section-heading,
+  .featured-section .section-heading > * {
+    min-width: 0;
+  }
+
+  .featured-section .section-heading .display-title {
+    max-width: 100%;
+    font-size: clamp(38px, 10.5vw, 44px);
+    line-height: 1.02;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
   .dish-card-offset {
     transform: none;
   }
@@ -3375,6 +3388,10 @@ figure {
   .story-band-image,
   .promise-image {
     height: 390px;
+  }
+
+  .promise-section {
+    min-height: 0;
   }
 
   .story-band-copy,

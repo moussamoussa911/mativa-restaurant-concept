@@ -1,10 +1,20 @@
 services:
   - type: web
     name: mativa-restaurant-concept
-    runtime: node
-    region: frankfurt
-    plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    healthCheckPath: /
+    runtime: static
+    buildCommand: echo "Static site ready"
+    staticPublishPath: .
     autoDeploy: true
+    routes:
+      - type: rewrite
+        source: /speisekarte
+        destination: /speisekarte.html
+      - type: rewrite
+        source: /reservieren
+        destination: /reservieren.html
+      - type: rewrite
+        source: /restaurant
+        destination: /restaurant.html
+      - type: rewrite
+        source: /rechtliches
+        destination: /rechtliches.html
